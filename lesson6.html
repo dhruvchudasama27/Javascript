@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example-6</title>
+</head>
+<body>
+    
+    <script>
+        // Write a programe to findout how many days given month has take month in int 
+        // 1=31 2=28/29 3=31 4=30 5=31 6=30 7=31 8=31 9=30 10=31 11=30 12=31
+        var month = parseInt(prompt("Enter a month number"));
+
+        if(month<=7)
+        {
+            if(month%2==2)
+            {
+                console.log("this month have 30 days");
+            }
+            else if(month==2)
+            {
+                console.log("this month have 28/29 days");
+            }
+            else
+            {
+                console.log("this month have 31 days");
+            }
+        }
+        else if(month<=12)
+        {
+            if(month%2==0)
+            {
+                console.log("this month have 31 days");
+            }
+            else
+            {
+                console.log("this month have 30 days");
+            }
+        }
+        else
+        {
+            console.log("invalid month");
+        }
+    </script>
+</body>
+</html>
