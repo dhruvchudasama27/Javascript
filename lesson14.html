@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Form</title>
 </head>
 <body>
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <button id="submitBtn">Submit</button>
+    <button id="resetBtn">Reset</button>
+    
     <script>
-        var name = [prompt("Enter your name")];
-        document.write(name);
-        var count = 0;
-
-        for(count = 0; count < 5; count--)
-        {
-            
-        }
+        // JavaScript code for clearing the input fields
+        document.getElementById("resetBtn").addEventListener("click", function () {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+        });
     </script>
 </body>
 </html>
