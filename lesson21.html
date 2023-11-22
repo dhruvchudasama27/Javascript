@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cricket Teams</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="display-4 mt-4 text-center fw-bolder">CRICKET TEAMS</div>
+        <hr>
+        <div class="row mt-5" id="data">
+
+        </div>
+    </div>
+    <script>
+        var t1 = {
+            'tname': 'India',
+            'pname': ['Kohli', 'Rohit', 'Ruturaj', 'Jadeja', 'Ashvin', 'Bumrah', 'Shami', 'Bhuvneshwar', 'Kuldeep'],
+            'C': 'Dhoni',
+            'VC': 'Rahul'
+        }
+        var t2 = {
+            'tname': 'Afghanistan',
+            'pname': ['Gurbaz','Shah','Hassan','Zadran','Nabi','Naveen','Ahmed','Omarzai','Rahman'],
+            'C':'Hashmatullah' ,
+            'VC':'Rashid'
+        }
+        var t3 = {
+            'tname': 'Australia',
+            'pname': ['Finch','Khawaja','Lyon','Marsh','Maxwell','Smith','Starc','Zampa','Watson'],
+            'C':'Cummins' ,
+            'VC':'Warner'
+        }
+        var t4 = {
+            'tname': 'England',
+            'pname': ['Moeen','Bairstow','Curran','Livingston','Adil','Roy','Stoke','Mark','Willy'],
+            'C':'Buttler' ,
+            'VC':'Root'
+        }
+        var t5 = {
+            'tname': 'Bangladesh',
+            'pname': ['Iqbal','Sarkar','Rahim','Hossain','Rahman','Mithun','Shakib','Hossain','Mustafizur'],
+            'C':'Mortaza' ,
+            'VC':'Das'
+        }
+        var t6 = {
+            'tname': 'New Zealand',
+            'pname': ['Finn','Bracewell','Chapman','Conway','Ferguson','Mitchell','Guptil','Phillips','Sodhi'],
+            'C':'Williamson' ,
+            'VC':'Boult'
+        }
+        var t7 = {
+            'tname': 'South Africa',
+            'pname': ['Miller','Klaasen','Keshav','Ngidi','Nortej','Jansen','Reeza','Gerald','Magala'],
+            'C':'Bavuma' ,
+            'VC':'De kock'
+        }
+        var t8 = {
+            'tname': 'Netherlands ',
+            'pname': ['Paul','Colin','Max','Roelof','Logan','Saqib','Dutt','Klen','Vikramjit'],
+            'C':'Scott' ,
+            'VC':'Bas'
+        }
+        var t9 = {
+            'tname': 'Sri Lanka',
+            'pname': ['Nissanka','Asalanka','Rajapaksa','Maheesh','Jeffery','Kumara','Dilshan','Promod','Chameera'],
+            'C':'Shanaka' ,
+            'VC':'Mendis'
+        }
+        var t10 = {
+            'tname': 'Nepal',
+            'pname': ['Dipendra','Aasif','Aarif','Bibek','Sagar','Karan','Raju','Anil','Sarraf'],
+            'C':'Sandeep' ,
+            'VC':'Malla'
+        }
+        var t11 = {
+            'tname': 'West Indies',
+            'pname': ['Badree','Benn','Andre','Gayle','Holder','Russel','Polard','Lewis','Nurse'],
+            'C': 'Sammy',
+            'VC':'Bravo'
+        }
+
+        var count = 0;
+        var teams = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11];
+        while (count < 11) {
+            document.getElementById("data").innerHTML += `<div class="col-3">
+                <div class="card">
+                    <div class="card-header text-bg-danger">${teams[count].tname}</div>
+                    <div class="card-body"><div class="text-success">${teams[count].C}(C)
+                    <br><span class="text-danger">${teams[count].VC}(VC)</span></div>${teams[count].pname}</div>
+                </div>
+            </div>`;
+            count++;
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
